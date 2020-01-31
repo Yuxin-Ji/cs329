@@ -123,8 +123,8 @@ def turn_2a(res: SimpleNamespace):
 
 def turn_3a(res: SimpleNamespace):
     curr_year = 2020
-    version_year = res.d_iphone_v.get(res.in_phone_version, None)
-    old = curr_year - version_year
+    v_year = res.d_iphone_v.get(res.in_phone_version, None)
+    old = curr_year - v_year
     s = 'S: iphone {} is about {} years old'.format(res.in_phone_version, old)
     print(s)
 
