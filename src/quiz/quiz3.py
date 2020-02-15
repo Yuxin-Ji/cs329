@@ -21,7 +21,6 @@ from nltk.corpus import wordnet as wn
 
 
 def antonyms(word: str, pos: Optional[str] = None) -> Set[str]:
-    pass
     ants = set()
     for syn in wn.synsets(word, pos):
         for lemma in syn.lemmas():
@@ -31,7 +30,6 @@ def antonyms(word: str, pos: Optional[str] = None) -> Set[str]:
 
 
 def lch_paths(word_0: str, word_1: str) -> List[List[Synset]]:
-    pass
     synsets_0 = wn.synsets(word_0)
     synsets_1 = wn.synsets(word_1)
     syn_paths = []
